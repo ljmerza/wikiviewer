@@ -93,7 +93,8 @@ function autofillKeyboard () {
 * if search button clicked then get input data and get wiki results
  */
 $("#searchButton").click( function (event) {
-    // get input value and clear it
+    // get input value/autolist and clear them
+    listUL.css('display', 'none')
     var inputVal = $("#searchInput").val()
     $("#searchInput").val('')
 
