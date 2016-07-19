@@ -1,0 +1,31 @@
+$section-bg-color: #E25252
+
+section
+  background: $section-bg-color
+  padding: 110px 50px 50px
+  min-height: 3em
+
+.card
+	padding: 1em 3em 2em 3em
+	width: 48%
+	background: white
+	margin-top: 2em
+
+.card .card-header h4
+	font-family: 'Fjalla One', sans-serif
+.card .card-body p
+	font-family: 'Average', serif
+	font-size: 1.2em
+
+.card:nth-of-type(even)
+	float: right
+.card:nth-of-type(odd)
+	float: left
+	clear: both
+
+.clear
+	clear: both
+
+@media screen and (max-width: 922px)
+	.card
+		width: 100%

@@ -1,0 +1,59 @@
+
+$header-bg-color: #E25252
+$section-bg-color: white
+$nav-bg-color: #CF2626
+$link-color: #590000
+
+a
+	color: $link-color
+body
+  margin: 0
+  background: $header-bg-color
+
+header
+  height: 10em
+  background: $header-bg-color
+header h1
+	font-family: 'Fjalla One', sans-serif
+	color: $link-color
+
+nav
+  background: $nav-bg-color
+  height: 10em
+  border: solid 1px
+
+
+
+.text-center
+	text-align: center
+	margin-top: 1em
+	font-size: 6em
+
+.btn
+	position: absolute
+	bottom: 0em
+	right: -15em
+	width: 10em
+	padding-top: 10px
+	padding-bottom: 45px
+	background: $link-color
+	border: solid 1px black
+	border-radius: 0px
+	transition: all 0.5s
+	font-size: 1.3em
+	color: white
+
+@media screen and (max-width: 992px)
+	.btn
+		position: relative
+		left: 50%
+		top: 2em
+		transform: translateX(-50%)
+	nav
+		height: 16em
+	header
+		height: 15em
+
+.btn:hover
+	background: $nav-bg-color
+	color: black
